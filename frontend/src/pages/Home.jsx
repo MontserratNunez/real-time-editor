@@ -39,7 +39,7 @@ export default function Home() {
       <div className="w-full max-w-sm">
         <h1 className="text-3xl font-bold mb-1 tracking-tight text-indigo-400">⌨ realtime</h1>
         <p className="text-sm mb-8" style={{ color: 'var(--text-muted)' }}>
-          Collaborative text editing, without the friction.
+          Collaborative code editing, without the friction.
         </p>
 
         <div className="rounded-lg border p-6 space-y-4"

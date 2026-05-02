@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home.jsx'
+import ProjectRoom from './pages/ProjectRoom.jsx'
 import { useSupabase } from './hooks/useSupabase.js'
 
 function ProtectedRoute({ children }) {
@@ -14,6 +15,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/project/:projectId" element={<ProtectedRoute> <ProjectRoom /> </ProtectedRoute>}/>
       </Routes>
     </BrowserRouter>
   )
